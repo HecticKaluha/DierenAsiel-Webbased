@@ -3,7 +3,7 @@
 body{
 	font-family: Verdana;
 }
-p{
+p, li{
 	font-size: 14px;
 }
 a{
@@ -12,4 +12,38 @@ a{
 }
 a:hover{
 	text-decoration: underline;
+}
+tr > td:first-child{
+	font-weight: bold;
+}
+h2{
+	color: #000000;
+}
+h2:hover{
+	text-decoration:none;
+}
+.title{
+	text-align: center;
+}
+table{
+	text-align: left;
+}
+label{
+	width: 200px;
+	display: inline-block;
+	font-weight: bold;
+}
+input{
+	font-size: 14px;
+	padding: 3px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+button{
+	background-color: #3366cc;
+	color: white;
+	font-weight: bold;
+}
+button:hover{
+	cursor: pointer;
 }
