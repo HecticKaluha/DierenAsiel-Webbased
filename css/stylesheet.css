@@ -32,6 +32,7 @@ label{
 	width: 200px;
 	display: inline-block;
 	font-weight: bold;
+	margin-bottom: 5px;
 }
 input{
 	font-size: 14px;
@@ -39,11 +40,20 @@ input{
 	border: 1px solid gray;
 	border-radius: 5px;
 }
-button{
+.btn{
 	background-color: #3366cc;
 	color: white;
 	font-weight: bold;
 }
-button:hover{
+.btn:hover{
 	cursor: pointer;
+}
+form{
+	border: solid 1px gray;
+	border-radius: 14px;
+	width: 400px;
+	padding: 15px 0 15px 15px;
+}
+.lbl{
+	width: auto;
 }
