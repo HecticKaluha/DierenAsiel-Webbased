@@ -1,3 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
-
+body{
+	font-family: Verdana;
+}
+p{
+	font-size: 14px;
+}
+a{
+	color: #339933;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
