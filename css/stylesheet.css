@@ -60,6 +60,6 @@ form{
 .hidden{
 	display: hidden;
 }
-.inline{
+.inline!important{
 	display: inline-block;
 }
