@@ -1,9 +1,9 @@
 // JavaScript Document
-showp()
+function showp()
 {
 	$('p').removeClass('hidden');	
 }
-hidep()
+function hidep()
 {
 	$('p').addClass('hidden');	
 }
