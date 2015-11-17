@@ -6,6 +6,9 @@ body{
 p, li{
 	font-size: 14px;
 }
+p{
+	display: inline-block;
+}
 a{
 	color: #339933;
 	text-decoration: none;
@@ -59,7 +62,4 @@ form{
 }
 .hidden{
 	display: none;
-}
-.inline{
-	display: inline-block;
 }
