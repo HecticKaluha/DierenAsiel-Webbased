@@ -57,9 +57,9 @@ form{
 .lbl{
 	width: auto;
 }
-.hidden{
-	display: hidden;
+.hidden!IMPORTANT{
+	display: none;
 }
-.inline!important{
+.inline{
 	display: inline-block;
 }
