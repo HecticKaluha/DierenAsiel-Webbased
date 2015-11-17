@@ -1,9 +1,9 @@
 // JavaScript Document
 function showp()
 {
-	$('p').removeClass('hidden');	
+	$('form p').removeClass('hidden');	
 }
 function hidep()
 {
-	$('p').addClass('hidden');	
+	$('form p').addClass('hidden');	
 }
