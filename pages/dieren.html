@@ -38,7 +38,7 @@
         
         <h2>Dieren Toevoegen</h2>
         <p>Hieronder is het mogelijk om een dier toe te voegen. U vult hier de gevraagde gegevens in. Wanneer de gegevens zijn ingevuld klikt u op "Bevestig"</p>
-        <form>
+        <form method="_get">
           <label for="naam">Naam</label>
   			<input type="text" id="naam"/><p class="hidden inline">Dit veld is verplicht</p>
           <label for="leeftijd">Leeftijd</label>
@@ -46,11 +46,11 @@
           <label for="registrationnumber">Registration nummer</label>
             <input type="text" id="registrationnumber" />
           <label for="status">Gereserveerd</label>
-            <input type="text" id="status" />
+            <input type="checkbox" id="status" />
             <label>Soort</label>
             <input type="radio" id="soortHond" name="type" value="Hond" /><label for="soortHond" class="lbl">Hond</label>
             <input type="radio" id="soortKat" name="type" value="Kat"/><label for ="soortKat" class="lbl">Kat</label>
-			<input type="submit" class="btn" value="Toevoegen" />
+			<input type="submit" class="btn" id="btn" value="Toevoegen" />
         </form>
     </body>
 </html>
