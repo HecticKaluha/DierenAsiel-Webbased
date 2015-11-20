@@ -40,15 +40,15 @@
         <p>Hieronder is het mogelijk om een dier toe te voegen. U vult hier de gevraagde gegevens in. Wanneer de gegevens zijn ingevuld klikt u op "Bevestig"</p>
         <form method="_get">
           <label for="naam">Naam</label>
-  			<input type="text" id="naam"/><p class="hidden inline">Dit veld is verplicht</p>
+  			<input type="text" id="naam"/><p id="namelen" class="hidden inline">Dit veld is verplicht</p>
           <label for="leeftijd">Leeftijd</label>
-            <input type="text" id="leeftijd" />
+            <input type="text" id="leeftijd" /><p id="age"class="hidden inline">De leeftijd van het dier moet groter zijn dan 0</p>
           <label for="registrationnumber">Registration nummer</label>
-            <input type="text" id="registrationnumber" />
+            <input type="text" id="registrationnumber" /><p id="regnr"class="hidden inline">Het eerste nummer van het registratiennummer moet gelijk zijn aan 0</p>
           <label for="status">Gereserveerd</label>
             <input type="checkbox" id="status" />
             <label>Soort</label>
-            <input type="radio" id="soortHond" name="type" value="Hond" /><label for="soortHond" class="lbl">Hond</label>
+            <input type="radio" id="soortHond" name="type" value="Hond" checked="true"/><label for="soortHond" class="lbl">Hond</label>
             <input type="radio" id="soortKat" name="type" value="Kat"/><label for ="soortKat" class="lbl">Kat</label>
 			<input type="submit" class="btn" id="btn" value="Toevoegen" />
         </form>
