@@ -1,4 +1,6 @@
 // JavaScript Document
+var animal_list;
+var dier;
 function focus()
 {
 	$('#namelen').removeClass('hidden');	
@@ -27,17 +29,19 @@ function OnReady()
 	{
 		window.alert(localStorage.getItem( 'Hond' ));
 	}*/
-	var animal_list = JSON.parse(localStorage.getItem('animal_list'));
+	animal_list = JSON.parse(localStorage.getItem('animal_list'));
 	if (!Array.isArray(animal_list))
 	{
   		animal_list = [];
+		localStorage.setItem('animal_list', JSON.stringify(animal_list));
+		window.alert('gelukt');
 	}
 	else
 	{
 		for (var i = 0; i < animal_list.length; ++i) 
 		{
 			var animal = animal_list[i];
-			window.alert(animal);
+			window.alert(JSON.stringify(animal));
   		}
 	}
 }
@@ -46,7 +50,7 @@ $(document).ready(OnReady);
 
 function OnSubmit(event) 
 {
-	var animal_list = JSON.parse(localStorage.getItem('animal_list'));
+	animal_list = JSON.parse(localStorage.getItem('animal_list'));
 	blur();
 	var animal= {}; 
 	  animal.species =  $('input[name=type]:checked').val();
@@ -80,7 +84,7 @@ function OnSubmit(event)
 		localStorage.setItem('Kat', Kat); //Item toevoegen aan local storage
 		console.log(Kat);
 
-		var dier = JSON.parse( localStorage.getItem( 'Kat' ) ); //van string object maken
+		dier = JSON.parse( localStorage.getItem( 'Kat' ) ); //van string object maken
 		console.log(dier);
 		animal_list.push(dier);
 		window.alert("Het dier is een kat!");
@@ -91,11 +95,11 @@ function OnSubmit(event)
 		var Hond = JSON.stringify(animal);
 		localStorage.setItem('Hond', Hond);
 		
-		var dier = JSON.parse( localStorage.getItem( 'Hond' ) );
+		dier = JSON.parse( localStorage.getItem( 'Hond' ) );
 		console.log(dier.name);
 		animal_list.push(dier);
 		window.alert("het dier is een Hond!");
 	}
-	localStorage.setItem('animal_List', JSON.stringify(animal_list));
+	localStorage.setItem('animal_list', JSON.stringify(animal_list));
 }
 
