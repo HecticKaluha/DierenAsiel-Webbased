@@ -100,6 +100,7 @@ function OnSubmit(event)
 		animal_list.push(dier);
 		window.alert("het dier is een Hond!");
 	}
+	console.log(animal.reserved);
 	localStorage.setItem('animal_list', JSON.stringify(animal_list));
 }
 
